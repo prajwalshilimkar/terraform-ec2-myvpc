@@ -32,3 +32,9 @@ variable "ec2_instance_name" {
   description = "Name tag for the EC2 instance"
   default     = "MyEC2Instance"
 }
+
+variable "ec2_key_pair_name" {
+  description = "Name of the EC2 key pair"
+  default     = "my-key-pair"
+}
+

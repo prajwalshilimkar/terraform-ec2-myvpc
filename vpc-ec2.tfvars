@@ -1,8 +1,9 @@
 # Custom variable values
-aws_region            = "us-west-2"
+aws_region            = "us-east-1"
 vpc_cidr_block        = "192.168.0.0/16"
 subnet_cidr_block     = "192.168.1.0/24"
-availability_zone     = "us-west-2a"
-ec2_ami               = "ami-0a70b9d193ae8a799"
+availability_zone     = "us-east-1a"
+ec2_ami               = "ami-0c101f26f147fa7fd"
 ec2_instance_type     = "t2.micro"
-ec2_instance_name     = "myec2withterraform"
+ec2_instance_name     = "MyEC2Instance"
+ec2_key_pair_name     = "virginia"  # Specify your desired key pair name here
