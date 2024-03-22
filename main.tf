@@ -63,12 +63,11 @@ resource "aws_security_group" "my_ec2_sg" {
 
 # Launch EC2 instance
 resource "aws_instance" "my_ec2_instance" {
-  ami             = var.ec2_ami
-  instance_type   = var.ec2_instance_type
-  subnet_id       = aws_subnet.newpublic_subnet.id
-  key_name        = var.ec2_key_pair_name  # Use key pair name here
-  security_groups = [aws_security_group.my_ec2_sg.id]  # Attach security group
+  ami           = var.ec2_ami
+  instance_type = var.ec2_instance_type
+  subnet_id     = aws_subnet.newpublic_subnet.id
   tags = {
     Name = var.ec2_instance_name
   }
 }
+
