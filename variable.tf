@@ -35,6 +35,6 @@ variable "ec2_instance_name" {
 
 variable "ec2_key_pair_name" {
   description = "Name of the EC2 key pair"
-  default     = "virginia"
+  default     = "virginia.pem"
 }
 
